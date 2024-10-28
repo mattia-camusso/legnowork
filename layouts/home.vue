@@ -1,6 +1,4 @@
 <template>
-  <Menu></Menu>
-  <Header></Header>
   <slot></slot>
   <Footer></Footer>
 </template>

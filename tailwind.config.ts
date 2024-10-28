@@ -29,7 +29,7 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        serif: "var(--font-serif)",
+        title: "var(--font-title)",
       },
       letterSpacing: {
         tagline: ".15em",

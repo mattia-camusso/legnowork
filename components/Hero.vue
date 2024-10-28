@@ -1,13 +1,16 @@
 <template>
   <div class="hero-container">
-    <h1 class="text-serif-big pt-[25vh] text-center text-c-1">
-      IL VOSTRO MATRIMONIO <br />DA SOGNO IN <br />VALLE D'AOSTA
+    <a href="/">
+      <img
+        class="h-[40vh] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+        src="../assets/svg/logo.svg"
+        alt="LegnoWork"
+      />
+    </a>
+    <h1 class="text-serif-1 text-center text-c-1 absolute bottom-8">
+      Dal 1994 prodotti di qualità senza compromessi e posa in opera
+      qualificata.
     </h1>
-    <MainButton
-      :link="'#services'"
-      class="mb-10 lg:mb-[15vh] min-w-[20vw] text-style-2"
-      >SCOPRI I NOSTRI SERVIZI</MainButton
-    >
   </div>
 </template>
 
@@ -26,5 +29,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  border-image: fill 1 linear-gradient(var(--overlay-dark), var(--overlay-dark));
 }
 </style>

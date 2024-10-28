@@ -23,16 +23,5 @@
 
 <style>
 .hero-container {
-  height: 100svh;
-  width: 100vw;
-  background-image: url("../assets/hero.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  background-position: 90% center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 </style>
