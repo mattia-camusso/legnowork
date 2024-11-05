@@ -80,7 +80,9 @@
       <h3 class="text-center font-bold text-style-1 mb-12">
         OLTRE TRENT’ANNI DI ESPERIENZA QUALIFICATA
       </h3>
-      <p class="text-center font-light leading-relaxed text-style-3">
+      <p
+        class="text-center text-pretty font-light leading-relaxed text-style-3"
+      >
         La nostra azienda vanta una solida esperienza trentennale nel campo
         delle installazioni di serramenti. Ogni intervento è realizzato con
         competenza e precisione, grazie a un team interno di professionisti
@@ -91,33 +93,46 @@
         dedizione che si è affinata nel tempo.
       </p>
     </div>
-    <div class="section section3 flex flex-col w-full">
-      <h3 class="text-serif-big pt-12 text-center text-c-2">
+    <div class="bg-c-1 rounded-b-3xl">
+      <h3 class="text-serif-big p-12 text-center text-c-2">
         I NOSTRI
         <span class="font-black"> PRODOTTI </span>
       </h3>
+      <Accordion id="`faqs-${index}`" active="faq.active">
+        <div class="services-cont mx-auto my-6 md:mx-12 md:mt-12">
+          <div class="" v-for="prodotto in prodotti">
+            <p class="text-style-4 uppercase item cursor-pointer">
+              {{ prodotto.name }}
+            </p>
+          </div>
+        </div>
+      </Accordion>
     </div>
-    <div class="section section4 flex justify-evenly items-center">
-      <img
-        src="../assets/locations.png"
-        alt="locations wedding planner aosta"
-        class="w-[50vw] lg:block hidden"
-      />
-      <Card
-        title="LOCATIONS"
-        description="La Valle d'Aosta è il territorio ideale per coronare il sogno di un matrimonio esclusivo e magico. 
-Lavorando come wedding planner in Valle d'Aosta conosco molto bene il panorama completo di ville, castelli e palazzi storici per aiutarvi a scegliere tra le migliori location, dove organizzare il vostro matrimonio da sogno."
-        :color="1"
-        cta="SCOPRI LOCATIONS"
-        url="locations"
-        aspect
-      ></Card>
+    <div class="section section3 flex flex-col-reverse w-full">
+      <div
+        class="m-12 mt-0 bg-c-1 backdrop-blur-sm opacity-75 rounded-3xl rounded-tl-none flex flex-col items-center"
+      >
+        <p class="p-8 leading-relaxed text-style-3">
+          Finestre costruite con i migliori materiali: LEGNO, ALLUMINIO-LEGNO,
+          PVC e PVC-LEGNO; Tipologie, esecuzioni e finiture per ogni Vostra
+          richiesta. L'esperienza acquisita ad oggi ci aiuta a soddisfare e
+          personalizzare i desideri dei nostri clienti
+        </p>
+        <MainButton link="finestre" class="mx-auto pb-8"
+          >Scopri di più</MainButton
+        >
+      </div>
+      <h4 class="text-c-1 text-serif-big font-black ml-12 opacity-75 text-s">
+        FINESTRE
+      </h4>
     </div>
+    <LogoScroller />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { services } from "../constants";
+import { prodotti } from "../constants";
+import LogoScroller from "./LogoScroller.vue";
 </script>
 
 <style scoped>
@@ -130,7 +145,7 @@ import { services } from "../constants";
 .services-cont {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-  row-gap: 10vh;
+  row-gap: 6vh;
   column-gap: 4vw;
   width: 95vw;
 }
@@ -157,10 +172,10 @@ import { services } from "../constants";
 @media screen and (max-width: 667px) {
   .services-cont {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(65vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     row-gap: 3vh;
     justify-items: center;
-    width: 70vw;
+    width: 90vw;
   }
 
   .services-cont > * {
@@ -182,10 +197,12 @@ import { services } from "../constants";
     linear-gradient(var(--overlay-light), var(--overlay-light));
 }
 .section3 {
-  background-image: url("assets/section3.png");
+  background-image: url("assets/default-prodotti.png");
   background-position: center 99%;
   background-size: cover;
   background-repeat: no-repeat;
+  border-image: fill 1
+    linear-gradient(var(--overlay-light), var(--overlay-light));
 }
 .section4 {
   background-image: url("assets/section4.png");
@@ -236,5 +253,42 @@ import { services } from "../constants";
       rgb(49, 52, 133, 0.65) 100%
     );
   background-image: url("../assets/landing3.png");
+}
+
+.item {
+  cursor: pointer;
+  @apply text-c-2;
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+  transition: all 400ms var(--cubic-bezier);
+}
+
+.item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  margin-top: 4px;
+  height: 3px;
+  @apply bg-c-4;
+}
+
+.item:not(:hover) {
+  transition: all 800ms ease;
+}
+
+.item:hover {
+  @apply text-c-4;
+  transition: all 800ms ease;
+}
+
+.item:hover::after {
+  width: 100%;
+  transition: width 800ms var(--cubic-bezier);
+}
+
+.item:not(:hover)::after {
+  width: 0%;
+  transition: width 800ms var(--cubic-bezier);
 }
 </style>

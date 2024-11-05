@@ -14,6 +14,7 @@
     <MainButton
       class="mb-10 lg:mb-[15vh] text-style-2 text-center min-w-[20vw]"
       :link="'/'"
+      inverted
       >TORNA ALLA HOME</MainButton
     >
   </div>

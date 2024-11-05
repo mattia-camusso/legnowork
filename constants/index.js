@@ -265,3 +265,30 @@ export const cars = [
       "Le motoslitte sono perfette per aggiungere un elemento di eccitazione e avventura agli eventi invernali. Questi veicoli offrono un'esperienza di guida rapida e divertente attraverso i paesaggi innevati, permettendo agli ospiti di godere di gite emozionanti e panoramiche. Perfette per escursioni in montagna o attività all'aperto durante i mesi invernali.",
   },
 ];
+
+export const prodotti = [
+  {
+    name: "Porte",
+  },
+  {
+    name: "Verande",
+  },
+  {
+    name: "Inferriate",
+  },
+  {
+    name: "Tende da Sole",
+  },
+  {
+    name: "Porte Blindate",
+  },
+  {
+    name: "Zanzariere",
+  },
+  {
+    name: "Tapparelle",
+  },
+  {
+    name: "Finestre",
+  },
+];

@@ -1,8 +1,12 @@
 <template>
   <a :href="props.link">
     <button
-      :class="width ? width : 'w-full'"
-      class="animation place-content-center bg-c-1 px-8 py-3 lg:py-[2vh]"
+      :class="
+        inverted
+          ? 'border-c-1 hover:text-c-2 after:bg-c-1 text-c-1'
+          : 'border-c-2 hover:text-c-1 after:bg-c-2 text-c-2'
+      "
+      class="relative uppercase border-[3px] font-semibold py-3 px-6 after:absolute after:h-0 after:hover:h-[200%] transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden z-20 after:z-[-20] after:w-full after:bottom-0 after:left-0"
     >
       <slot />
     </button>
@@ -11,26 +15,9 @@
 
 <script lang="ts" setup>
 const props = defineProps({
-  width: String,
+  inverted: Boolean,
   link: String,
 });
 </script>
 
-<style>
-.animation {
-  transform: translate(0, 0);
-  transition: all 0.4s ease;
-  box-shadow: -5px 5px 0px 1px var(--color-3);
-}
-@media screen and (max-width: 640px) {
-  .animation {
-    box-shadow: none;
-  }
-}
-
-.animation:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 0px 0px 1px var(--color-3);
-  background-color: var(--color-3);
-}
-</style>
+<style></style>
