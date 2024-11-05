@@ -4,6 +4,15 @@ import { ref } from "vue";
 export const useMainStore = defineStore("store", () => {
   const menuToggle = ref(false);
   const cardOpen = ref(false);
+  const selectedProduct = ref("");
+  const selectedDescription = ref("");
+
+  function selectProduct(product) {
+    selectedProduct.value = product;
+  }
+  function selectDescription(description) {
+    selectedDescription.value = description;
+  }
 
   function toggleMenu() {
     menuToggle.value = !menuToggle.value;
@@ -12,5 +21,14 @@ export const useMainStore = defineStore("store", () => {
     cardOpen.value = value;
   }
 
-  return { menuToggle, toggleMenu, cardOpen, openCard };
+  return {
+    menuToggle,
+    toggleMenu,
+    cardOpen,
+    openCard,
+    selectedProduct,
+    selectProduct,
+    selectedDescription,
+    selectDescription,
+  };
 });
