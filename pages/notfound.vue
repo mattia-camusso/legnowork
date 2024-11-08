@@ -4,7 +4,7 @@
       <img
         src="../assets/svg/logo.svg"
         class="h-20 lg:h-[10vh]"
-        alt="alessia matti wedding planner aosta"
+        alt="Legnowork"
       />
     </a>
     <h3 class="text-serif-big md:pt-[25vh] text-center text-c-1">

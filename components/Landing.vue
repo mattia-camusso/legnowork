@@ -83,7 +83,14 @@
       <p
         class="text-center text-pretty font-light leading-relaxed text-style-3"
       >
-        {{ getDescription }}
+        La nostra azienda vanta una solida esperienza trentennale nel campo
+        delle installazioni di serramenti. Ogni intervento è realizzato con
+        competenza e precisione, grazie a un team interno di professionisti
+        altamente qualificati. Il nostro personale, formato con costante
+        aggiornamento, si distingue per la capacità di operare in ogni contesto,
+        rispettando sia gli ambienti che le persone. Questa lunga tradizione ci
+        permette di garantire installazioni a regola d’arte, frutto di una
+        dedizione che si è affinata nel tempo.
       </p>
     </div>
     <div class="bg-c-1 rounded-b-3xl">
@@ -91,11 +98,11 @@
         I NOSTRI
         <span class="font-black"> PRODOTTI </span>
       </h3>
-      <Accordion id="`faqs-${index}`" active="faq.active">
+      <Accordion id="`faqs-${index}`">
         <div class="services-cont mx-auto my-6 md:mx-12 md:mt-12">
           <div class="" v-for="prodotto in prodotti">
             <button
-              @click="select(prodotto.name)"
+              @click="select(prodotto)"
               class="text-style-4 uppercase item cursor-pointer"
             >
               {{ prodotto.name }}
@@ -106,20 +113,22 @@
     </div>
     <div class="section section3 flex flex-col-reverse w-full">
       <div
-        v-if="store.selectedProduct"
+        v-if="store.selectedProduct.id"
         class="m-12 mt-0 bg-c-1 backdrop-blur-sm opacity-75 rounded-3xl rounded-tl-none flex flex-col items-center"
       >
         <p class="p-8 leading-relaxed text-style-3">
-          {{ store.selectedDescription }}
+          {{ store.selectedProduct.description }}
         </p>
-        <MainButton link="finestre" class="mx-auto pb-8"
+        <MainButton
+          :link="`/prodotti/${store.selectedProduct.id}`"
+          class="mx-auto pb-8"
           >Scopri di più</MainButton
         >
       </div>
       <h4
         class="text-c-1 uppercase text-serif-big font-black ml-12 opacity-75 text-s"
       >
-        {{ store.selectedProduct }}
+        {{ store.selectedProduct.name }}
       </h4>
     </div>
     <LogoScroller />
@@ -136,12 +145,12 @@ const store = useMainStore();
 
 const select = (product) => {
   store.selectProduct(product);
-  const prod = prodotti.find((el) => el.name == store.selectedProduct);
-  store.selectDescription(prod?.description);
 };
 
 const getDescription = computed(() => {
-  const prod = prodotti.find((el) => el.name == store.selectedProduct);
+  const prod = prodotti.find(
+    (el) => el.name == store.selectedProduct.description
+  );
   console.log(prod?.description);
   if (prod) return prod.description;
 });

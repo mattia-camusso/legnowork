@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="mx-12 flex justify-between">
-      <div class="flex flex-col justify-between gap-12">
+      <div class="flex flex-col items justify-between gap-12">
         <a href="/" class="flex items-center">
           <img
             class="h-6"
@@ -19,7 +19,7 @@
           />
           <p class="item text-serif-1 font-bold ml-2">HOME</p>
         </a>
-        <a href="/prodotti" class="flex items-center">
+        <a href="/prodotti/porte" class="flex items-center">
           <img
             class="h-6"
             src="../assets/svg/accordion-small.svg"
@@ -83,15 +83,15 @@ footer {
   width: 0%;
   margin-top: 4px;
   height: 3px;
-  @apply bg-c-3;
+  @apply bg-c-2;
 }
 
-.item:not(:hover) {
+.items:hover > .item:not(:hover) {
   transition: all 800ms ease;
 }
 
 .item:hover {
-  @apply text-c-3;
+  @apply text-c-2;
   transition: all 800ms ease;
 }
 

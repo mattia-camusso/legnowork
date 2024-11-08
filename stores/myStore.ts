@@ -4,14 +4,14 @@ import { ref } from "vue";
 export const useMainStore = defineStore("store", () => {
   const menuToggle = ref(false);
   const cardOpen = ref(false);
-  const selectedProduct = ref("");
-  const selectedDescription = ref("");
+  const selectedProduct = ref({
+    id: "",
+    name: "",
+    description: "",
+  });
 
   function selectProduct(product) {
     selectedProduct.value = product;
-  }
-  function selectDescription(description) {
-    selectedDescription.value = description;
   }
 
   function toggleMenu() {
@@ -28,7 +28,5 @@ export const useMainStore = defineStore("store", () => {
     openCard,
     selectedProduct,
     selectProduct,
-    selectedDescription,
-    selectDescription,
   };
 });
