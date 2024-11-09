@@ -219,12 +219,6 @@ const getDescription = computed(() => {
   border-image: fill 1
     linear-gradient(var(--overlay-light), var(--overlay-light));
 }
-.section4 {
-  background-image: url("assets/section4.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .blue-container {
   width: 100vw;
@@ -242,10 +236,6 @@ const getDescription = computed(() => {
   .section2 {
     background-image: url("assets/landing2.png");
     background-size: cover;
-  }
-  .section4 {
-    background-size: cover;
-    background-image: url("assets/locations-mobile.png");
   }
 }
 
