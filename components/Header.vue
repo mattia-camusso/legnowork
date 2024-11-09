@@ -1,7 +1,7 @@
 <template>
   <div class="bg-c-3 h-[12vh] flex items-center justify-center">
     <a href="/">
-      <img class="h-10" src="../assets/svg/logo-header.svg" alt="" />
+      <img class="h-8 md:h-10" src="../assets/svg/logo-header.svg" alt="" />
     </a>
   </div>
 </template>

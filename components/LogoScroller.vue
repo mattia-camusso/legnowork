@@ -3,7 +3,7 @@
     <div class="w-full flex flex-col items-center justify-center">
       <h3 class="text-c-1 uppercase text-serif-big font-black">Partners</h3>
       <p
-        class="font-light text-c-1 text-style-4 p-24 text-center leading-relaxed"
+        class="font-light text-c-1 text-style-4 p-12 lg:p-24 text-center leading-relaxed"
       >
         Lavoriamo fianco a fianco con partner selezionati e leader del settore,
         garantendo solamente i prodotti della miglior qualità.

@@ -8,12 +8,12 @@
         VENITE A SCOPRIRE I NOSTRI
         <span class="font-black"> SERVIZI </span>
       </h3>
-      <div class="flex justify-between w-full">
+      <div class="flex flex-col md:flex-row justify-between w-full">
         <div class="gap-[4.2rem] flex flex-col mx-12 mt-16">
           <div class="flex after-line">
             <img
               src="../assets/svg/icon1.svg"
-              class="h-14 mr-8 hidden sm:block"
+              class="h-6 lg:h-14 mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -23,7 +23,7 @@
           <div class="flex after-line">
             <img
               src="../assets/svg/icon2.svg"
-              class="h-14 mr-8 hidden sm:block"
+              class="h-6 lg:h-14 mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -33,7 +33,7 @@
           <div class="flex after-line">
             <img
               src="../assets/svg/icon3.svg"
-              class="h-14 mr-8 hidden sm:block"
+              class="h-6 lg:h-14 mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -43,7 +43,7 @@
           <div class="flex after-line">
             <img
               src="../assets/svg/icon4.svg"
-              class="h-14 mr-8 hidden sm:block"
+              class="h-6 lg:h-14 mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -51,7 +51,7 @@
             </p>
           </div>
         </div>
-        <div class="mt-8">
+        <div class="mt-16 lg:mt-8 ml-8 md:ml-0">
           <img src="../assets/landing1.png" alt="legnowork" />
         </div>
       </div>
@@ -61,12 +61,12 @@
       class="section section2 flex flex-col items-center justify-between"
     >
       <div
-        class="flex flex-col items-center p-10 mt-[20vh] h-full card-container"
+        class="flex flex-col items-center p-6 lg:p-10 mt-[20vh] h-full card-container"
       >
-        <p class="font-bold text-center text-style-4 mb-10">
+        <p class="font-bold text-center text-pretty text-style-4 mb-10">
           DETRAZIONI DEL 50% SULLA SPESA PER SOSTITUZIONE INFISSI
         </p>
-        <p class="font-light text-center text-style-4">
+        <p class="font-light text-center text-pretty text-style-4">
           SOLO FINO AL 31/12/2024
         </p>
       </div>
@@ -76,8 +76,8 @@
         alt="instagram wedding planner valle d'aosta"
       />
     </div>
-    <div class="blue-container">
-      <h3 class="text-center font-bold text-style-1 mb-12">
+    <div class="blue-container p-12 md:p-20">
+      <h3 class="text-center text-pretty font-bold text-style-1 mb-12">
         OLTRE TRENT’ANNI DI ESPERIENZA QUALIFICATA
       </h3>
       <p
@@ -232,6 +232,18 @@ const getDescription = computed(() => {
   background-repeat: no-repeat;
 }
 
+.blue-container {
+  width: 100vw;
+  @apply text-c-1;
+  border-image: fill 1
+    linear-gradient(
+      to bottom,
+      rgba(49, 52, 133, 1) 0%,
+      rgb(49, 52, 133, 0.65) 100%
+    );
+  background-image: url("../assets/landing3.png");
+}
+
 @media screen and (max-width: 1024px) {
   .section2 {
     background-image: url("assets/landing2.png");
@@ -261,19 +273,6 @@ const getDescription = computed(() => {
   width: 75vw;
   @apply bg-c-1;
   box-shadow: 0px 4px 4px 0px var(--color-2);
-}
-
-.blue-container {
-  width: 100vw;
-  padding: 5rem;
-  @apply text-c-1;
-  border-image: fill 1
-    linear-gradient(
-      to bottom,
-      rgba(49, 52, 133, 1) 0%,
-      rgb(49, 52, 133, 0.65) 100%
-    );
-  background-image: url("../assets/landing3.png");
 }
 
 .item {

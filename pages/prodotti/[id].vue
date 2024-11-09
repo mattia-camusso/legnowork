@@ -1,12 +1,12 @@
 <template>
   <Header></Header>
   <div class="m-12">
-    <h2 class="text-serif-big uppercase font-black">
+    <h2 class="text-serif-big uppercase text-center md:text-left font-black">
       {{ currentProduct.name }}
     </h2>
-    <div class="flex gap-12 mt-12">
+    <div class="flex lg:flex-row flex-col-reverse gap-12 mt-12">
       <img
-        class="w-1/2 object-cover"
+        class="lg:w-1/2 object-cover"
         :src="`/img/${currentProduct.id}/1.png`"
         :alt="`${currentProduct.name} LegnoWork`"
       />
@@ -16,7 +16,7 @@
     </div>
   </div>
   <AccordionSmall title="faq.title" id="`faqs-${index}`">
-    <div class="services-cont mx-auto my-6 md:mx-12 md:mt-12">
+    <div class="services-cont mx-auto my-6 md:mx-12 mt-12">
       <div v-for="prodotto in prodotti">
         <a
           v-if="prodotto.id != currentProduct.id"
