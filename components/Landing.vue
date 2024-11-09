@@ -203,12 +203,6 @@ const getDescription = computed(() => {
   }
 }
 
-.section1 {
-  background-image: url("assets/section1.png");
-  background-position: center 99%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .section2 {
   background-image: url("assets/landing2.png");
   background-position: center;
