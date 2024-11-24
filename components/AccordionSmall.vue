@@ -24,7 +24,7 @@ onMounted(() => {
         :aria-expanded="accordionOpen"
         :aria-controls="`accordion-text-${id}`"
       >
-        <span class="text-c-1 font-bold text-serif-1 flex items-center pl-12 gap-2">
+        <span class="text-c-1 font-bold text-serif-1 flex items-center px-4 md:pl-12 gap-2">
           <img src="../assets/svg/accordion-white.svg" :class="{ 'rotate-90': accordionOpen }" class="h-6 transition-all duration-300 ease-in-out"></img>
           ALTRI PRODOTTI</span
         >

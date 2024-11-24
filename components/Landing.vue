@@ -2,14 +2,25 @@
   <div>
     <div
       id="services"
-      class="section section1 flex flex-col w-full justify-start items-center"
+      class="section1 flex flex-col w-full justify-start h-full items-center"
     >
       <h3 class="text-serif-big sm:pt-16 pt-8 lg:pt-[8vh] w-[90vw] text-center">
         VENITE A SCOPRIRE I NOSTRI
         <span class="font-black"> SERVIZI </span>
       </h3>
       <div class="flex flex-col md:flex-row justify-between w-full">
-        <div class="gap-[4.2rem] flex flex-col mx-12 mt-16">
+        <div class="gap-[4.2rem] md:w-3/5 flex flex-col mx-12 mt-16">
+          <div class="flex after-line">
+            <img
+              src="../assets/svg/icon5.svg"
+              class="h-6 lg:h-14 mr-8"
+              alt="instagram wedding planner valle d'aosta"
+            />
+            <p class="text-style-4">
+              Nel nostro Show-room potete trovare e toccare con mano i nostri
+              prodotti
+            </p>
+          </div>
           <div class="flex after-line">
             <img
               src="../assets/svg/icon1.svg"
@@ -27,7 +38,8 @@
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
-              Sopralluoghi e consulenza tecnica professionale
+              Sopralluoghi, consulenza tecnica professionale e preventivi
+              gratuiti
             </p>
           </div>
           <div class="flex after-line">
@@ -56,6 +68,7 @@
         </div>
       </div>
     </div>
+    <div class="h-16 md:h-32"></div>
     <div
       id="chi-sono"
       class="section section2 flex flex-col items-center justify-between"
@@ -95,40 +108,47 @@
     </div>
     <div class="bg-c-1 rounded-b-3xl">
       <h3 class="text-serif-big p-12 text-center text-c-2">
-        I NOSTRI
-        <span class="font-black"> PRODOTTI </span>
+        CHI
+        <span class="font-black"> SIAMO </span>
       </h3>
-      <Accordion id="`faqs-${index}`">
-        <div class="services-cont mx-auto my-6 md:mx-12 md:mt-12">
-          <div class="" v-for="prodotto in prodotti">
-            <button
-              @click="select(prodotto)"
-              class="text-style-4 uppercase item cursor-pointer"
-            >
-              {{ prodotto.name }}
-            </button>
-          </div>
-        </div>
-      </Accordion>
     </div>
-    <div class="section section3 flex flex-col-reverse w-full">
+    <div
+      id="chi-siamo"
+      class="section3 relative flex bg-c-2 flex-col-reverse aspect-video w-full"
+    >
+      <div class="absolute backdrop-blur-sm md:hidden h-full w-full"></div>
       <div
-        v-if="store.selectedProduct.id"
-        class="m-12 mt-0 bg-c-1 backdrop-blur-sm opacity-75 rounded-3xl rounded-tl-none flex flex-col items-center"
+        class="md:bg-c-1 z-10 md:backdrop-blur-md md:opacity-75 flex flex-col items-center"
       >
-        <p class="p-8 leading-relaxed text-style-3">
-          {{ store.selectedProduct.description }}
-        </p>
-        <MainButton
-          :link="`/prodotti/${store.selectedProduct.id}`"
-          class="mx-auto pb-8"
-          >Scopri di più</MainButton
+        <div
+          class="py-4 px-8 text-style-3 text-c-1 md:text-c-2 leading-relaxed flex flex-col gap-2"
         >
+          <p class="font-medium md:font-light">
+            Legnowork nasce nel 1994 come società operante nella fornitura di
+            finestre, porte, accessori complementari e della relativa posa in
+            opera qualificata.
+          </p>
+          <p class="font-medium md:font-light">
+            Nell’attività svolta in questi anni, seguendo e a volte anticipando
+            le richieste e le tendenze del mercato e della clientela, ha
+            selezionato e consolidato i rapporti con i migliori produttori del
+            settore a livello nazionale.
+          </p>
+          <p class="font-medium md:font-light">
+            Ha perfezionato con estrema cura e con un sempre costante
+            aggiornamento l’installazione professionale e qualificata dei
+            prodotti che vengono forniti. La filosofia e la missione cha ha
+            sempre motivato i titolari di questa azienda ed i suoi collaboratori
+            si riassume in queste valori: qualità senza compromessi,
+            installazioni professionali e qualificate, serietà incondizionata
+            verso la clientela.
+          </p>
+        </div>
       </div>
       <h4
-        class="text-c-1 uppercase text-serif-big font-black ml-12 opacity-75 text-s"
+        class="text-c-1 z-10 uppercase text-serif-bigger font-black mt-8 md:opacity-90 text-center text-s"
       >
-        {{ store.selectedProduct.name }}
+        LEGNOWORK
       </h4>
     </div>
     <LogoScroller />
@@ -188,6 +208,10 @@ const getDescription = computed(() => {
   .services-cont > * {
     width: 100%;
   }
+
+  .section2 {
+    min-height: 60vh;
+  }
 }
 
 @media screen and (max-width: 667px) {
@@ -212,12 +236,11 @@ const getDescription = computed(() => {
     linear-gradient(var(--overlay-light), var(--overlay-light));
 }
 .section3 {
-  background-image: url("assets/default-prodotti.png");
+  background-image: url("assets/chi-siamo.png");
   background-position: center 99%;
   background-size: cover;
   background-repeat: no-repeat;
-  border-image: fill 1
-    linear-gradient(var(--overlay-light), var(--overlay-light));
+  border-image: fill 1 linear-gradient(var(--overlay-dark), var(--overlay-dark));
 }
 
 .blue-container {

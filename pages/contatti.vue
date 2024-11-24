@@ -1,5 +1,7 @@
 <template>
+  <Menu></Menu>
   <Header></Header>
+  <div class="mt-[12vh] md:mt-0"></div>
   <div class="flex flex-col md:flex-row m-12 md:h-[90vh]">
     <div
       class="md:w-[45vw] flex flex-col items-center justify-between gap-6 md:gap-0 md:h-full"

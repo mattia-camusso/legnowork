@@ -7,7 +7,7 @@
         alt="LegnoWork"
       />
     </a>
-    <h1 class="text-serif-1 p-4 text-center text-c-1 absolute bottom-8">
+    <h1 class="text-serif-1 text-center px-4 text-c-1 mb-[10vh]">
       Dal 1994 prodotti di qualità senza compromessi e posa in opera
       qualificata.
     </h1>
@@ -20,7 +20,7 @@
 .hero-container {
   height: 100svh;
   width: 100vw;
-  background-image: url("../assets/hero.png");
+  background-image: url("../assets/default-prodotti.png");
   background-size: cover;
   background-repeat: no-repeat;
 

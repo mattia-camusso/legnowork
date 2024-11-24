@@ -9,15 +9,25 @@
         />
       </a>
       <div class="flex justify-between md:gap-6">
-        <img class="h-32" src="../assets/svg/albolegno.svg" alt="LegnoWork" />
-        <img class="h-32" src="../assets/icon_finstral.png" alt="LegnoWork" />
+        <img
+          class="h-24 md:h-32"
+          src="../assets/svg/albolegno.svg"
+          alt="LegnoWork"
+        />
+        <img
+          class="h-24 md:h-32"
+          src="../assets/icon_finstral.png"
+          alt="LegnoWork"
+        />
       </div>
     </div>
-    <div class="mx-12 flex flex-col md:flex-row justify-between">
-      <div class="flex flex-col items justify-between gap-12">
+    <div class="mx-6 md:mx-12 flex flex-col md:flex-row justify-between">
+      <div
+        class="flex flex-col items justify-between items-center md:items-start gap-6 md:gap-12"
+      >
         <a href="/" class="flex items-center">
           <img
-            class="h-6"
+            class="h-6 hidden sm:block"
             src="../assets/svg/accordion-small.svg"
             alt="LegnoWork"
           />
@@ -25,7 +35,7 @@
         </a>
         <a href="/prodotti/porte" class="flex items-center">
           <img
-            class="h-6"
+            class="h-6 hidden sm:block"
             src="../assets/svg/accordion-small.svg"
             alt="LegnoWork"
           />
@@ -33,32 +43,46 @@
         </a>
         <a href="/contatti" class="flex items-center">
           <img
-            class="h-6"
+            class="h-6 hidden sm:block"
             src="../assets/svg/accordion-small.svg"
             alt="LegnoWork"
           />
           <p class="item text-serif-1 font-bold ml-2">CONTATTI</p>
         </a>
+        <a href="/contatti" class="flex items-center">
+          <img
+            class="h-6 hidden sm:block"
+            src="../assets/svg/accordion-small.svg"
+            alt="LegnoWork"
+          />
+          <p class="item text-serif-1 font-bold ml-2">CHI SIAMO</p>
+        </a>
       </div>
       <div class="flex flex-col gap-6 mt-12">
         <div>
-          <p class="text-style-3 md:text-right md:w-3/4 md:ml-auto">
+          <p class="text-style-3 text-center md:text-right md:w-3/4 md:ml-auto">
             Via Calabria, 15 - 20054 Redecesio di Segrate (MI)
           </p>
         </div>
         <div>
-          <p class="text-style-3 md:text-right">Tel. +39 02 2137228</p>
+          <p class="text-style-3 text-center md:text-right">
+            Tel. +39 02 2137228
+          </p>
         </div>
         <div>
-          <p class="text-style-3 md:text-right">Tel. +39 02 26920202</p>
+          <p class="text-style-3 text-center md:text-right">
+            Tel. +39 02 26920202
+          </p>
         </div>
         <div>
-          <p class="text-style-3 md:text-right">Cell. +39 351 8036828</p>
+          <p class="text-style-3 text-center md:text-right">
+            Cell. +39 351 8036828
+          </p>
         </div>
       </div>
     </div>
-    <div class="flex flex-col-reverse h-[10vh] md:h-[20vh] w-full items-center">
-      <h6 class="text-style-4 font-light p-4 text-center lg:mb-6">
+    <div class="flex flex-col-reverse h-[20vh] w-full items-center">
+      <h6 class="text-style-4 font-light p-4 text-center mb-6">
         © 2016 Legnowork srl | Porte e Finestre | P.IVA 11360870155
       </h6>
     </div>

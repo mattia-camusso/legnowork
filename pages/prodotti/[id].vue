@@ -1,31 +1,45 @@
 <template>
+  <Menu></Menu>
   <Header></Header>
+  <div class="mt-[12vh] md:mt-0"></div>
   <div class="m-12">
     <h2 class="text-serif-big uppercase text-center md:text-left font-black">
       {{ currentProduct.name }}
     </h2>
     <div class="flex lg:flex-row flex-col-reverse gap-12 mt-12">
       <img
-        class="lg:w-1/2 object-cover"
-        :src="`/img/${currentProduct.id}/1.png`"
+        class="lg:w-1/2 object-cover aspect-[5/4]"
+        :src="`/img/${currentProduct.id}/${currentImage}.png`"
         :alt="`${currentProduct.name} LegnoWork`"
       />
       <p class="text-style-4 text-pretty leading-relaxed">
         {{ currentProduct.description }}
       </p>
     </div>
+    <div
+      class="flex flex-wrap justify-between md:justify-normal md:gap-8 md:mt-8 mt-4"
+    >
+      <div
+        @click="currentImage = img"
+        v-for="img in currentProduct.length"
+        class="relative border-2 border-transparent hover:border-c-4 transition-all"
+      >
+        <img
+          class="h-20 md:h-24 aspect-square object-cover"
+          :src="`/img/${currentProduct.id}/${img}.png`"
+          :alt="`${currentProduct.name} ${img} Legnowork`"
+        />
+        <div v-if="img != currentImage" class="over-light h-full"></div>
+      </div>
+    </div>
   </div>
   <AccordionSmall title="faq.title" id="`faqs-${index}`">
     <div class="services-cont mx-auto my-6 md:mx-12 mt-12">
-      <div v-for="prodotto in prodotti">
-        <a
-          v-if="prodotto.id != currentProduct.id"
-          :href="prodotto.id"
-          class="item cursor-pointer"
-        >
-          <h4 class="text-style-4 uppercase text-c-1">
+      <div v-for="prodotto in prodFiltrati">
+        <a :href="prodotto.id" class="cursor-pointer">
+          <TextUnderlineAnimated extraStyle="text-style-4 uppercase" color="1">
             {{ prodotto.name }}
-          </h4>
+          </TextUnderlineAnimated>
         </a>
       </div>
     </div>
@@ -35,16 +49,24 @@
 
 <script setup>
 import Header from "../../components/Header.vue";
+import TextUnderlineAnimated from "../../components/TextUnderlineAnimated.vue";
 import { prodotti } from "../constants";
 import { useRoute } from "vue-router";
 
 definePageMeta({
   middleware: ["prodotti"],
 });
+import { ref, onMounted } from "vue";
+let prodFiltrati;
 
 const route = useRoute();
 
+onMounted(() => {
+  prodFiltrati = prodotti.filter((p) => p.id != route.params.id);
+});
+
 const currentProduct = ref("");
+const currentImage = ref(1);
 
 currentProduct.value = prodotti.find(
   (element) => element.id === route.params.id
@@ -69,6 +91,19 @@ otherProducts.value = prodotti.filter(
 .services-cont > * {
   min-width: 20vw;
   width: 100%;
+}
+
+.over-light {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

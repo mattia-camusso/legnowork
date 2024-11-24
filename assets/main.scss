@@ -9,7 +9,7 @@
   --font-title: "Gotham", "Helvetica", sans-serif;
   --cubic-bezier: cubic-bezier(0.8, 0.12, 0.05, 0.88);
   --color-1: #fcf8f2;
-  --overlay-dark: #0f1a20ab;
+  --overlay-dark: #0f1a206f;
   --overlay-light: #fcf8f24d;
   --color-2: #1a0b02;
   --color-2-transparent: #1828257c;
@@ -41,7 +41,7 @@
   font-size: clamp(1.5rem, 2.2vw, 3rem);
 }
 .text-style-2 {
-  font-size: clamp(0.7rem, 1vw, 3rem);
+  font-size: clamp(0.8rem, 1.2vw, 2.5rem);
 }
 .text-style-3 {
   font-size: clamp(1rem, 1.4vw, 3.2rem);
@@ -72,6 +72,10 @@
 
 .text-serif-big {
   @apply text-style-big;
+  font-family: var(--font-title);
+}
+.text-serif-bigger {
+  @apply text-style-bigger;
   font-family: var(--font-title);
 }
 
