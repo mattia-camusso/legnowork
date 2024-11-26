@@ -1,12 +1,12 @@
 <template>
   <div class="hero-container">
-    <a href="/">
+    <div>
       <img
         class="h-[12vh] md:h-[40vh] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
         src="../assets/svg/logo.svg"
         alt="LegnoWork"
       />
-    </a>
+    </div>
     <h1 class="text-serif-1 text-center px-4 text-c-1 mb-[10vh]">
       Dal 1994 prodotti di qualità senza compromessi e posa in opera
       qualificata.

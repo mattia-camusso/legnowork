@@ -69,10 +69,7 @@
       </div>
     </div>
     <div class="h-16 md:h-32"></div>
-    <div
-      id="chi-sono"
-      class="section section2 flex flex-col items-center justify-between"
-    >
+    <div class="section section2 flex flex-col items-center justify-between">
       <div
         class="flex flex-col items-center p-6 lg:p-10 mt-[20vh] h-full card-container"
       >
@@ -106,19 +103,14 @@
         dedizione che si è affinata nel tempo.
       </p>
     </div>
-    <div class="bg-c-1 rounded-b-3xl">
-      <h3 class="text-serif-big p-12 text-center text-c-2">
-        CHI
-        <span class="font-black"> SIAMO </span>
-      </h3>
-    </div>
+    <div class="bg-c-1 rounded-b-3xl"></div>
     <div
       id="chi-siamo"
-      class="section3 relative flex bg-c-2 flex-col-reverse aspect-video w-full"
+      class="section3 relative flex bg-c-2 flex-col-reverse h-[100vh] w-full"
     >
       <div class="absolute backdrop-blur-sm md:hidden h-full w-full"></div>
       <div
-        class="md:bg-c-1 z-10 md:backdrop-blur-md md:opacity-75 flex flex-col items-center"
+        class="md:bg-c-1 z-10 md:backdrop-blur-md md:opacity-65 flex flex-col items-center"
       >
         <div
           class="py-4 px-8 text-style-3 text-c-1 md:text-c-2 leading-relaxed flex flex-col gap-2"
@@ -146,10 +138,12 @@
         </div>
       </div>
       <h4
-        class="text-c-1 z-10 uppercase text-serif-bigger font-black mt-8 md:opacity-90 text-center text-s"
+        class="text-c-1 z-10 uppercase text-serif-bigger mt-8 md:opacity-90 text-center"
       >
-        LEGNOWORK
+        CHI
+        <span class="font-black"> SIAMO </span>
       </h4>
+      <h3 class="text-serif-big p-12 text-center text-c-2"></h3>
     </div>
     <LogoScroller />
   </div>

@@ -9,24 +9,22 @@
     <div class="flex lg:flex-row flex-col-reverse gap-12 mt-12">
       <img
         class="lg:w-1/2 object-cover aspect-[5/4]"
-        :src="`/img/${currentProduct.id}/${currentImage}.png`"
+        :src="`/img/${currentProduct.id}/${currentImage}.jpg`"
         :alt="`${currentProduct.name} LegnoWork`"
       />
       <p class="text-style-4 text-pretty leading-relaxed">
         {{ currentProduct.description }}
       </p>
     </div>
-    <div
-      class="flex flex-wrap justify-between md:justify-normal md:gap-8 md:mt-8 mt-4"
-    >
+    <div class="flex flex-wrap justify-between md:justify-normal md:gap-8">
       <div
         @click="currentImage = img"
         v-for="img in currentProduct.length"
-        class="relative border-2 border-transparent hover:border-c-4 transition-all"
+        class="relative border-2 border-transparent hover:border-c-4 transition-all md:mt-8 mt-8"
       >
         <img
           class="h-20 md:h-24 aspect-square object-cover"
-          :src="`/img/${currentProduct.id}/${img}.png`"
+          :src="`/img/${currentProduct.id}/${img}.jpg`"
           :alt="`${currentProduct.name} ${img} Legnowork`"
         />
         <div v-if="img != currentImage" class="over-light h-full"></div>

@@ -21,40 +21,22 @@
         />
       </div>
     </div>
-    <div class="mx-6 md:mx-12 flex flex-col md:flex-row justify-between">
+    <div
+      class="mx-6 md:mx-12 flex flex-col md:flex-row gap-8 md:gap-0 justify-between"
+    >
       <div
         class="flex flex-col items justify-between items-center md:items-start gap-6 md:gap-12"
       >
         <a href="/" class="flex items-center">
-          <img
-            class="h-6 hidden sm:block"
-            src="../assets/svg/accordion-small.svg"
-            alt="LegnoWork"
-          />
           <p class="item text-serif-1 font-bold ml-2">HOME</p>
         </a>
         <a href="/prodotti/porte" class="flex items-center">
-          <img
-            class="h-6 hidden sm:block"
-            src="../assets/svg/accordion-small.svg"
-            alt="LegnoWork"
-          />
           <p class="item text-serif-1 font-bold ml-2">PRODOTTI</p>
         </a>
         <a href="/contatti" class="flex items-center">
-          <img
-            class="h-6 hidden sm:block"
-            src="../assets/svg/accordion-small.svg"
-            alt="LegnoWork"
-          />
           <p class="item text-serif-1 font-bold ml-2">CONTATTI</p>
         </a>
         <a href="/contatti" class="flex items-center">
-          <img
-            class="h-6 hidden sm:block"
-            src="../assets/svg/accordion-small.svg"
-            alt="LegnoWork"
-          />
           <p class="item text-serif-1 font-bold ml-2">CHI SIAMO</p>
         </a>
       </div>
@@ -81,7 +63,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col-reverse h-[20vh] w-full items-center">
+    <div class="flex flex-col-reverse h-[15vh] md:h-[20vh] w-full items-center">
       <h6 class="text-style-4 font-light p-4 text-center mb-6">
         © 2016 Legnowork srl | Porte e Finestre | P.IVA 11360870155
       </h6>
