@@ -230,7 +230,7 @@ const getDescription = computed(() => {
     linear-gradient(var(--overlay-light), var(--overlay-light));
 }
 .section3 {
-  background-image: url("assets/chi-siamo.png");
+  background-image: url("assets/chi-siamo1.jpg");
   background-position: center 99%;
   background-size: cover;
   background-repeat: no-repeat;

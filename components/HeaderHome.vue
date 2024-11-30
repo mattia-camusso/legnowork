@@ -10,7 +10,7 @@
         alt="Legnowork Logo"
       />
     </a>
-    <nav class="nav-items mt-2 gap-12 2xl:gap-24 hidden md:flex justify-center">
+    <nav class="nav-items mt-2 gap-6 2xl:gap-24 hidden md:flex justify-center">
       <a href="/#chi-siamo">
         <TextUnderlineAnimated extraStyle="text-style-2" color="1">
           CHI SIAMO
@@ -19,6 +19,11 @@
       <a href="/contatti">
         <TextUnderlineAnimated extraStyle="text-style-2" color="1">
           CONTATTI
+        </TextUnderlineAnimated>
+      </a>
+      <a href="/showroom">
+        <TextUnderlineAnimated extraStyle="text-style-2" color="1">
+          SHOWROOM
         </TextUnderlineAnimated>
       </a>
       <AccordionHeader title="faq.title" id="`faqs-${index}`">

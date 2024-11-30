@@ -1,10 +1,17 @@
 export const prodotti = [
   {
+    id: "finestre",
+    name: "Finestre",
+    description:
+      "Finestre costruite con i migliori materiali: LEGNO, ALLUMINIO-LEGNO, PVC e PVC-LEGNO; selezionate dai migliori produttori. Tipologie, esecuzioni e finiture per ogni Vostra richiesta. L'esperienza acquisita ad oggi ci aiuta a soddisfare e personalizzare i desideri dei nostri clienti",
+    length: 6,
+  },
+  {
     id: "porte",
     name: "Porte",
     description:
       "Interni e ingressi di sicurezza. Tradizionali, innovative o di tendenza. Semplici, decorate, incise o pannellate. Interne o esterne di sicurezza. La porta resta sempre un elemento essenziale che identifica e personalizza. Anche qui abbiamo abbiamo scelto per garantirvi qualità e innovazione.",
-    length: 4,
+    length: 6,
   },
   {
     id: "verande",
@@ -47,12 +54,5 @@ export const prodotti = [
     description:
       "Tapparelle avvolgibili disponibili in diversi materiali far cui: PVC, ALLUMINIO, IN LAMINA DI ACCIAIO PER LA SICUREZZA, LEGNO E LE NUONE CON LA STECCA ORIENTABILE. Sostituzione e ricambi di tutti gli accessori inerenti la movimentazione. Motorizzazione e automazione elettrica delle stesse e anche di quelle già esistenti.",
     length: 1,
-  },
-  {
-    id: "finestre",
-    name: "Finestre",
-    description:
-      "Finestre costruite con i migliori materiali: LEGNO, ALLUMINIO-LEGNO, PVC e PVC-LEGNO; selezionate dai migliori produttori. Tipologie, esecuzioni e finiture per ogni Vostra richiesta. L'esperienza acquisita ad oggi ci aiuta a soddisfare e personalizzare i desideri dei nostri clienti",
-    length: 3,
   },
 ];

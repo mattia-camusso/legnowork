@@ -17,13 +17,19 @@
         class="menu-item text-serif-big text-c-1 font-bold"
         :class="[store.menuToggle ? 'opacity-100' : 'opacity-0']"
       >
-        <a href="/prodotti/porte">PRODOTTI</a>
+        <a href="/prodotti/finestre">PRODOTTI</a>
       </div>
       <div
         class="menu-item text-serif-big text-c-1 font-bold"
         :class="[store.menuToggle ? 'opacity-100' : 'opacity-0']"
       >
         <a href="/contatti">CONTATTI</a>
+      </div>
+      <div
+        class="menu-item text-serif-big text-c-1 font-bold"
+        :class="[store.menuToggle ? 'opacity-100' : 'opacity-0']"
+      >
+        <a href="/showroom">SHOWROOM</a>
       </div>
     </div>
   </div>

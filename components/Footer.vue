@@ -30,7 +30,7 @@
         <a href="/" class="flex items-center">
           <p class="item text-serif-1 font-bold ml-2">HOME</p>
         </a>
-        <a href="/prodotti/porte" class="flex items-center">
+        <a href="/prodotti/finestre" class="flex items-center">
           <p class="item text-serif-1 font-bold ml-2">PRODOTTI</p>
         </a>
         <a href="/contatti" class="flex items-center">

@@ -19,8 +19,9 @@
     <div class="flex flex-wrap justify-between md:justify-normal md:gap-8">
       <div
         @click="currentImage = img"
+        v-if="currentProduct.length > 1"
         v-for="img in currentProduct.length"
-        class="relative border-2 border-transparent hover:border-c-4 transition-all md:mt-8 mt-8"
+        class="relative cursor-pointer border-2 border-transparent hover:border-c-4 transition-all md:mt-8 mt-8"
       >
         <img
           class="h-20 md:h-24 aspect-square object-cover"
@@ -31,7 +32,7 @@
       </div>
     </div>
   </div>
-  <AccordionSmall title="faq.title" id="`faqs-${index}`">
+  <AccordionSmall active="true" title="faq.title" id="`faqs-${index}`">
     <div class="services-cont mx-auto my-6 md:mx-12 mt-12">
       <div v-for="prodotto in prodFiltrati">
         <a :href="prodotto.id" class="cursor-pointer">
