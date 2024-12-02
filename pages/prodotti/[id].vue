@@ -8,7 +8,7 @@
     </h2>
     <div class="flex lg:flex-row flex-col-reverse gap-12 mt-12">
       <img
-        class="lg:w-1/2 object-cover aspect-[5/4]"
+        class="lg:w-1/2 object-cover h-[30rem] aspect-[5/4]"
         :src="`/img/${currentProduct.id}/${currentImage}.jpg`"
         :alt="`${currentProduct.name} LegnoWork`"
       />
@@ -24,7 +24,7 @@
         class="relative cursor-pointer border-2 border-transparent hover:border-c-4 transition-all md:mt-8 mt-8"
       >
         <img
-          class="h-20 md:h-24 aspect-square object-cover"
+          class="min-h-20 md:h-24 aspect-square object-fit"
           :src="`/img/${currentProduct.id}/${img}.jpg`"
           :alt="`${currentProduct.name} ${img} Legnowork`"
         />

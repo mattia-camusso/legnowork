@@ -25,14 +25,14 @@ export const prodotti = [
     name: "Inferriate",
     description:
       "Inferriate di sicurezza certificate da prove antieffrazione. Eseguibili in diverse tipologie: fisse, apribili, apribili snodate da applicarsi in combinazione con persiane esterne. Una scelta ampia di lavorazioni, disegni, sagomature e colorazioni.",
-    length: 1,
+    length: 2,
   },
   {
     id: "tende-da-sole",
     name: "Tende da Sole",
     description:
       "Persiane e oscuranti per esterno nei materiali più resistenti, ed eseguite in tutte le tipologie. Disponibili anche con telaio portante e lamelle orientabili. La scelta fra ALLUMINIO, PVC, LEGNO in una gamma completa di finiture.",
-    length: 1,
+    length: 2,
   },
   {
     id: "porte-blindate",
@@ -53,6 +53,6 @@ export const prodotti = [
     name: "Tapparelle",
     description:
       "Tapparelle avvolgibili disponibili in diversi materiali far cui: PVC, ALLUMINIO, IN LAMINA DI ACCIAIO PER LA SICUREZZA, LEGNO E LE NUONE CON LA STECCA ORIENTABILE. Sostituzione e ricambi di tutti gli accessori inerenti la movimentazione. Motorizzazione e automazione elettrica delle stesse e anche di quelle già esistenti.",
-    length: 1,
+    length: 3,
   },
 ];
