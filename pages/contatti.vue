@@ -9,16 +9,16 @@
       class="md:w-[45vw] flex flex-col items-center justify-evenly gap-6 md:gap-0 md:h-full"
     >
       <div class="flex items-center gap-4">
-        <img class="h-6 lg:h-8" src="../assets/svg/whatsapp.svg" alt="" />
-        <p class="text-style-3">+39 351 8036828</p>
-      </div>
-      <div class="flex items-center gap-4">
         <img class="h-6 lg:h-8" src="../assets/svg/email.svg" alt="" />
         <p class="text-style-3">info@legnowork.com</p>
       </div>
       <div class="flex items-center gap-4">
+        <img class="h-6 lg:h-8" src="../assets/svg/whatsapp.svg" alt="" />
+        <p class="text-style-3">+39 02 2137228</p>
+      </div>
+      <div class="flex items-center gap-4">
         <img class="h-6 lg:h-8" src="../assets/svg/phone.svg" alt="" />
-        <p class="text-style-3">+39 351 8036828</p>
+        <p class="text-style-3">+39 02 26920202</p>
       </div>
       <div class="flex items-center gap-4">
         <img class="h-6 lg:h-8" src="../assets/svg/phone.svg" alt="" />

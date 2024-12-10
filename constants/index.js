@@ -3,14 +3,14 @@ export const prodotti = [
     id: "finestre",
     name: "Finestre",
     description:
-      "Finestre costruite con i migliori materiali: LEGNO, ALLUMINIO-LEGNO, PVC e PVC-LEGNO; selezionate dai migliori produttori. Tipologie, esecuzioni e finiture per ogni Vostra richiesta. L'esperienza acquisita ad oggi ci aiuta a soddisfare e personalizzare i desideri dei nostri clienti",
+      "Finestre costruite con i migliori materiali: LEGNO, ALLUMINIO, ALLUMINIO-LEGNO, PVC e PVC-LEGNO; selezionate dai migliori produttori. Tipologie, esecuzioni e finiture per ogni Vostra richiesta. L'esperienza acquisita ad oggi ci aiuta a soddisfare e personalizzare i desideri dei nostri clienti",
     length: 6,
   },
   {
     id: "porte",
     name: "Porte",
     description:
-      "Interni e ingressi di sicurezza. Tradizionali, innovative o di tendenza. Semplici, decorate, incise o pannellate. Interne o esterne di sicurezza. La porta resta sempre un elemento essenziale che identifica e personalizza. Anche qui abbiamo abbiamo scelto per garantirvi qualità e innovazione.",
+      "Interni in legno, laminatino e in cristallo.. Tradizionali, innovative o di tendenza. Semplici, decorate, incise o pannellate. La porta resta sempre un elemento essenziale che identifica e personalizza. Anche qui abbiamo abbiamo scelto per garantirvi qualità e innovazione.",
     length: 6,
   },
   {
@@ -31,8 +31,15 @@ export const prodotti = [
     id: "tende-da-sole",
     name: "Tende da Sole",
     description:
-      "Persiane e oscuranti per esterno nei materiali più resistenti, ed eseguite in tutte le tipologie. Disponibili anche con telaio portante e lamelle orientabili. La scelta fra ALLUMINIO, PVC, LEGNO in una gamma completa di finiture.",
+      "Tende da sole con i tessuti dei migliori produttori, anche di grandi dimensioni. Manuali o motorizzate con accessori e automazioni abbinabili alla domotica.",
     length: 2,
+  },
+  {
+    id: "persiane",
+    name: "Persiane",
+    description:
+      "Persiane e oscuranti per esterno nei materiali più resistenti, ed eseguite in tutte le tipologie. Disponibili anche con telaio portante e lamelle orientabili. La scelta fra ALLUMINIO, PVC, LEGNO in una gamma completa di finiture.",
+    length: 3,
   },
   {
     id: "porte-blindate",
