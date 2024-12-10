@@ -29,8 +29,8 @@ const props = defineProps({
   content: "";
   display: block;
   width: 0%;
-  margin-top: 3px;
-  height: 3px;
+  margin-top: 4px;
+  height: 2px;
 }
 
 .under:hover > .under:not(:hover) {
