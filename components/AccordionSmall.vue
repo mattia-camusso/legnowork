@@ -15,16 +15,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="py-6 bg-c-3">
+  <div class=" bg-c-3">
     <h2>
       <button
         :id="`accordion-title-${id}`"
-        class="flex items-center justify-between w-full text-left font-semibold py-2"
+        :class="title != 'mobile' ? 'flex' : ''"
+        class="items-center justify-between w-full font-semibold py-2"
         @click.prevent="accordionOpen = !accordionOpen"
         :aria-expanded="accordionOpen"
         :aria-controls="`accordion-text-${id}`"
       >
-        <span class="text-c-1 font-bold text-serif-1 flex items-center px-4 md:pl-12 gap-2">
+        <span v-if="title == 'mobile'" class="text-serif-big text-c-1 font-bold">PRODOTTI</span>
+        <span v-else class="text-c-1 font-bold text-serif-1 flex items-center px-4 md:pl-12 gap-2">
           <img src="../assets/svg/accordion-white.svg" :class="{ 'rotate-90': accordionOpen }" class="h-6 transition-all duration-300 ease-in-out"></img>
           ALTRI PRODOTTI</span
         >

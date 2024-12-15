@@ -17,7 +17,20 @@
         class="menu-item text-serif-big text-c-1 font-bold"
         :class="[store.menuToggle ? 'opacity-100' : 'opacity-0']"
       >
-        <a href="/prodotti/finestre">PRODOTTI</a>
+        <AccordionSmall title="mobile" id="`faqs-${index}`">
+          <div class="services-cont mx-auto my-6 md:mx-12 mt-12">
+            <div v-for="prodotto in prodotti" class="text-center">
+              <a :href="prodotto.id" class="cursor-pointer">
+                <TextUnderlineAnimated
+                  extraStyle="text-style-4 uppercase"
+                  color="1"
+                >
+                  {{ prodotto.name }}
+                </TextUnderlineAnimated>
+              </a>
+            </div>
+          </div>
+        </AccordionSmall>
       </div>
       <div
         class="menu-item text-serif-big text-c-1 font-bold"
@@ -37,6 +50,7 @@
 
 <script lang="ts" setup>
 import { useMainStore } from "../stores/myStore";
+import { prodotti } from "../constants";
 
 const store = useMainStore();
 </script>

@@ -10,7 +10,7 @@ export const prodotti = [
     id: "porte",
     name: "Porte",
     description:
-      "Interni in legno, laminatino e in cristallo.. Tradizionali, innovative o di tendenza. Semplici, decorate, incise o pannellate. La porta resta sempre un elemento essenziale che identifica e personalizza. Anche qui abbiamo abbiamo scelto per garantirvi qualità e innovazione.",
+      "Interni in legno, laminatino e in cristallo.. Tradizionali, innovative o di tendenza. Semplici, decorate, incise o pannellate. La porta resta sempre un elemento essenziale che identifica e personalizza. Anche qui abbiamo scelto per garantirvi qualità e innovazione.",
     length: 6,
   },
   {

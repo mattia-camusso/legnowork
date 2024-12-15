@@ -9,22 +9,11 @@
         <span class="font-black"> SERVIZI </span>
       </h3>
       <div class="flex flex-col md:flex-row justify-between w-full">
-        <div class="gap-[4.2rem] md:w-3/5 flex flex-col mx-12 mt-16">
-          <div class="flex after-line">
-            <img
-              src="../assets/svg/icon5.svg"
-              class="h-6 lg:h-14 mr-8"
-              alt="instagram wedding planner valle d'aosta"
-            />
-            <p class="text-style-4">
-              Nel nostro Show-room potete trovare e toccare con mano i nostri
-              prodotti
-            </p>
-          </div>
+        <div class="gap-12 md:gap-16 md:w-3/5 flex flex-col mx-8 mt-16">
           <div class="flex after-line">
             <img
               src="../assets/svg/icon1.svg"
-              class="h-6 lg:h-14 mr-8"
+              class="h-6 lg:h-14 mr-4 md:mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -34,7 +23,7 @@
           <div class="flex after-line">
             <img
               src="../assets/svg/icon2.svg"
-              class="h-6 lg:h-14 mr-8"
+              class="h-6 lg:h-14 mr-4 md:mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -45,7 +34,7 @@
           <div class="flex after-line">
             <img
               src="../assets/svg/icon3.svg"
-              class="h-6 lg:h-14 mr-8"
+              class="h-6 lg:h-14 mr-4 md:mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -55,7 +44,7 @@
           <div class="flex after-line">
             <img
               src="../assets/svg/icon4.svg"
-              class="h-6 lg:h-14 mr-8"
+              class="h-6 lg:h-14 mr-4 md:mr-8"
               alt="instagram wedding planner valle d'aosta"
             />
             <p class="text-style-4">
@@ -87,7 +76,9 @@
       />
     </div>
     <div class="blue-container p-12 md:p-20">
-      <h3 class="text-center text-pretty font-bold text-style-1 mb-12">
+      <h3
+        class="text-center leading-relaxed text-pretty font-bold text-style-1 mb-12"
+      >
         OLTRE TRENT’ANNI DI ESPERIENZA QUALIFICATA
       </h3>
       <p
@@ -113,7 +104,7 @@
         class="md:bg-c-1 z-10 md:backdrop-blur-md md:opacity-65 flex flex-col items-center"
       >
         <div
-          class="py-4 px-8 text-style-3 text-c-1 md:text-c-2 leading-relaxed flex flex-col gap-2"
+          class="p-8 text-style-3 text-c-1 md:text-c-2 leading-relaxed flex flex-col gap-2"
         >
           <p class="font-medium md:font-light">
             Legnowork nasce nel 1994 come società operante nella fornitura di
@@ -253,6 +244,11 @@ const getDescription = computed(() => {
   .section2 {
     background-image: url("assets/landing2.png");
     background-size: cover;
+  }
+
+  .after-line::after {
+    content: "";
+    width: 0 !important;
   }
 }
 
