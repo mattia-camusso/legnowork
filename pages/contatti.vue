@@ -1,8 +1,7 @@
 <template>
   <Menu></Menu>
   <Header></Header>
-  <div class="mt-[12vh] md:mt-6"></div>
-  <div class="flex items-center justify-center">
+  <div class="flex items-center justify-center md:pt-32 pt-24">
     <h3 class="text-serif-big font-black text-center md:text-left">CONTATTI</h3>
   </div>
   <div class="flex flex-col mx-8 my-12">
@@ -75,7 +74,7 @@
       </div>
     </div>
   </div>
-  <div class="h-[50vh] md:h-[80vh]md:m-12 m-6">
+  <div class="h-[50vh] md:h-[80vh] md:m-12 m-6">
     <iframe
       src="https://storage.googleapis.com/maps-solutions-2ccpdr55l2/locator-plus/mmm2/locator-plus.html"
       width="100%"

@@ -1,5 +1,7 @@
 <template>
-  <header class="p-8 md:flex items-strart hidden justify-between bg-c-3">
+  <header
+    class="p-8 md:flex fixed w-[100vw] z-[999] items-strart hidden justify-between bg-c-3"
+  >
     <a href="/">
       <img
         src="../assets/svg/logo-header.svg"

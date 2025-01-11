@@ -36,7 +36,7 @@
         <a href="/contatti" class="flex items-center">
           <p class="item text-serif-1 font-bold ml-2">CONTATTI</p>
         </a>
-        <a href="/contatti" class="flex items-center">
+        <a href="/#chi-siamo" class="flex items-center">
           <p class="item text-serif-1 font-bold ml-2">CHI SIAMO</p>
         </a>
       </div>

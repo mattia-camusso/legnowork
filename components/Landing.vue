@@ -14,7 +14,7 @@
             <img
               src="../assets/svg/icon1.svg"
               class="h-6 lg:h-14 mr-4 md:mr-8"
-              alt="instagram wedding planner valle d'aosta"
+              alt="Legnowork porte e finestre"
             />
             <p class="text-style-4">
               Assistenza post-vendita e manutenzione programmata
@@ -24,7 +24,7 @@
             <img
               src="../assets/svg/icon2.svg"
               class="h-6 lg:h-14 mr-4 md:mr-8"
-              alt="instagram wedding planner valle d'aosta"
+              alt="Legnowork porte e finestre"
             />
             <p class="text-style-4">
               Sopralluoghi, consulenza tecnica professionale e preventivi
@@ -35,7 +35,7 @@
             <img
               src="../assets/svg/icon3.svg"
               class="h-6 lg:h-14 mr-4 md:mr-8"
-              alt="instagram wedding planner valle d'aosta"
+              alt="Legnowork porte e finestre"
             />
             <p class="text-style-4">
               Posa in opera qualificata legno-legno e casa clima
@@ -45,7 +45,7 @@
             <img
               src="../assets/svg/icon4.svg"
               class="h-6 lg:h-14 mr-4 md:mr-8"
-              alt="instagram wedding planner valle d'aosta"
+              alt="Legnowork porte e finestre"
             />
             <p class="text-style-4">
               Finanziamenti personalizzati anche a tasso zero
@@ -72,7 +72,7 @@
       <img
         src="../assets/svg/INSTALLAZIONI.svg"
         class="w-full mb-[-5px]"
-        alt="instagram wedding planner valle d'aosta"
+        alt="Legnowork porte e finestre"
       />
     </div>
     <div class="blue-container p-12 md:p-20">

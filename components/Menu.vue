@@ -20,7 +20,7 @@
         <AccordionSmall title="mobile" id="`faqs-${index}`">
           <div class="services-cont mx-auto my-6 md:mx-12 mt-12">
             <div v-for="prodotto in prodotti" class="text-center">
-              <a :href="prodotto.id" class="cursor-pointer">
+              <a :href="`/prodotti/${prodotto.id}`" class="cursor-pointer">
                 <TextUnderlineAnimated
                   extraStyle="text-style-4 uppercase"
                   color="1"
