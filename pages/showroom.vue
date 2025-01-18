@@ -1,7 +1,6 @@
 <template>
   <Menu></Menu>
   <Header></Header>
-  <div class="mt-[12vh] md:mt-0"></div>
   <div class="m-12 mt-0 md:pt-32 pt-24">
     <h2 class="text-serif-big uppercase text-center md:text-left font-black">
       SHOWROOM

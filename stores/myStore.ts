@@ -3,6 +3,9 @@ import { ref } from "vue";
 
 export const useMainStore = defineStore("store", () => {
   const menuToggle = ref(false);
+
+  const bannerToggle = ref(true);
+
   const selectedProduct = ref({
     id: "",
     name: "",
@@ -17,9 +20,15 @@ export const useMainStore = defineStore("store", () => {
     menuToggle.value = !menuToggle.value;
   }
 
+  function toggleBanner() {
+    bannerToggle.value = false;
+  }
+
   return {
     menuToggle,
     toggleMenu,
+    bannerToggle,
+    toggleBanner,
     selectedProduct,
     selectProduct,
   };

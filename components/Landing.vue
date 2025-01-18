@@ -63,10 +63,10 @@
         class="flex flex-col items-center p-6 lg:p-10 mt-[20vh] h-full card-container"
       >
         <p class="font-bold text-center text-pretty text-style-4 mb-10">
-          DETRAZIONI DEL 50% SULLA SPESA PER SOSTITUZIONE INFISSI
+          DETRAZIONE DEL 50% SULLA SPESA PER SOSTITUZIONE FINESTRE
         </p>
         <p class="font-light text-center text-pretty text-style-4">
-          SOLO FINO AL 31/12/2024
+          RINNOVATA FINO AL 31/12/2025
         </p>
       </div>
       <img
