@@ -92,7 +92,8 @@
     </div>
     <div class="flex flex-col-reverse h-[15vh] md:h-[20vh] w-full items-center">
       <h6 class="text-style-4 font-light p-4 text-center mt-6">
-        © 2016 Legnowork srl | Porte e Finestre | P.IVA 11360870155
+        © 2016 Legnowork srl | Porte e Finestre | P.IVA 11360870155 |
+        <a href="/privacy-policy">Privacy Policy</a>
       </h6>
     </div>
   </footer>
